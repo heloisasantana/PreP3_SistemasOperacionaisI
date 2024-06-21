@@ -20,7 +20,6 @@ public class DrinkController {
             return; // Termina o programa se o arquivo JSON não existir
         }
         List<Drink> drinksList = lerInstrucoesEmItaliano(jsonFilePath);
-        System.out.println("drinksList" + drinksList);
         // Caso a lista não seja nula, mostra as instruções em italiano de cada receita
         if (drinksList != null) {
             mostrarInstrucoesEmItaliano(drinksList);
